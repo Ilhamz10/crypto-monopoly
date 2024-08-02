@@ -1,0 +1,324 @@
+.GameBoard {
+	/* width: 100%;
+	max-height: 100%; */
+	height: 100%;
+	aspect-ratio: 1 / 1;
+	background: #f8f9ff;
+	border-radius: 25px;
+	position: relative;
+}
+
+@media (max-width: 600px) {
+	.GameBoard {
+		height: auto;
+		width: 100%;
+	}
+}
+
+.field {
+	width: 20.94%;
+	aspect-ratio: 1 / 1;
+	background: transparent;
+	position: absolute;
+	background: white;
+}
+
+.field.leftTop {
+	top: 0;
+	left: 0;
+	border-top-left-radius: 20%;
+}
+
+.field.rightTop {
+	top: 0;
+	right: 0;
+	border-top-right-radius: 20%;
+}
+
+.field.leftBottom {
+	left: 0;
+	bottom: 0;
+	border-bottom-left-radius: 20%;
+}
+
+.field.rightBottom {
+	bottom: 0;
+	right: 0;
+	border-bottom-right-radius: 20%;
+}
+
+.cornerGradient {
+	width: 13.66%;
+	position: absolute;
+	aspect-ratio: 1 / 1;
+}
+
+.cornerGradient:has(.rightTop) {
+	left: 0;
+	bottom: 0;
+}
+
+.cornerGradient:has(.leftTop) {
+	bottom: 0;
+	right: 0;
+}
+
+.cornerGradient:has(.rightBottom) {
+	left: 0;
+	top: 0;
+}
+
+.cornerGradient:has(.leftBottom) {
+	right: 0;
+	top: 0;
+}
+
+.corner {
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+}
+
+.corner.leftTop {
+	border-radius: 100% 0 0 0;
+}
+
+.corner.rightTop {
+	border-radius: 0 100% 0 0;
+}
+
+.corner.rightBottom {
+	border-radius: 0 0 100% 0;
+}
+
+.corner.leftBottom {
+	border-radius: 0 0 0 100%;
+}
+
+.field1 {
+	top: 0;
+	left: 20.94%;
+}
+
+.field2 {
+	left: calc(20.94% + 6.46%);
+}
+
+.field3 {
+	left: calc(20.94% + 2 * 6.46%);
+}
+
+.field4 {
+	left: calc(20.94% + 3 * 6.46%);
+}
+.field5 {
+	left: calc(20.94% + 4 * 6.46%);
+}
+.field6 {
+	left: calc(20.94% + 5 * 6.46%);
+}
+.field7 {
+	left: calc(20.94% + 6 * 6.46%);
+}
+.field8 {
+	left: calc(20.94% + 7 * 6.46%);
+}
+
+.field9 {
+	right: 20.94%;
+}
+
+.field10 {
+	top: 20.94%;
+}
+
+.field11 {
+	top: calc(20.94% + 6.46%);
+}
+
+.field12 {
+	top: calc(20.94% + 2 * 6.46%);
+}
+
+.field13 {
+	top: calc(20.94% + 3 * 6.46%);
+}
+
+.field14 {
+	top: calc(20.94% + 4 * 6.46%);
+}
+
+.field15 {
+	top: calc(20.94% + 5 * 6.46%);
+}
+
+.field16 {
+	top: calc(20.94% + 6 * 6.46%);
+}
+
+.field17 {
+	top: calc(20.94% + 7 * 6.46%);
+}
+
+.field18 {
+	top: calc(20.94% + 8 * 6.46%);
+}
+
+.field19 {
+	right: 20.94%;
+}
+
+.field20 {
+	right: calc(20.94% + 6.46%);
+}
+
+.field21 {
+	right: calc(20.94% + 2 * 6.46%);
+}
+
+.field22 {
+	right: calc(20.94% + 3 * 6.46%);
+}
+.field23 {
+	right: calc(20.94% + 4 * 6.46%);
+}
+.field24 {
+	right: calc(20.94% + 5 * 6.46%);
+}
+.field25 {
+	right: calc(20.94% + 6 * 6.46%);
+}
+.field26 {
+	right: calc(20.94% + 7 * 6.46%);
+}
+
+.field27 {
+	left: 20.94%;
+}
+
+.field28 {
+	bottom: 20.94%;
+}
+
+.field29 {
+	top: calc(20.94% + 7 * 6.46%);
+}
+.field30 {
+	top: calc(20.94% + 6 * 6.46%);
+}
+.field31 {
+	top: calc(20.94% + 5 * 6.46%);
+}
+.field32 {
+	top: calc(20.94% + 4 * 6.46%);
+}
+.field33 {
+	top: calc(20.94% + 3 * 6.46%);
+}
+.field34 {
+	top: calc(20.94% + 2 * 6.46%);
+}
+.field35 {
+	top: calc(20.94% + 1 * 6.46%);
+}
+
+.field36 {
+	top: 20.94%;
+}
+
+.jailImg {
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+	width: 80%;
+	height: 64.5%;
+}
+
+.police {
+	position: absolute;
+	top: 15%;
+	right: 15%;
+	width: 70%;
+	height: 85%;
+}
+
+.park {
+	position: absolute;
+	top: 15%;
+	right: 15%;
+	width: 70%;
+	height: 85%;
+}
+
+.park img {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.park p {
+	font-size: 13px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.police img {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.police p {
+	font-size: 13px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.round {
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	padding: 20% 0 0;
+}
+
+.round button {
+	font-size: 20px;
+	font-weight: 800;
+	padding: 10px 15px;
+	width: max-content;
+}
+
+.round strong {
+	font-size: 19px;
+	font-weight: 800;
+}
+
+.round p {
+	font-size: 13px;
+	font-weight: 300;
+}
+
+@media (max-height: 800px) {
+	.police p {
+		font-size: 10px;
+	}
+
+	.park p {
+		font-size: 10px;
+	}
+
+	.round button {
+		font-size: 14px;
+		font-weight: 800;
+		padding: 5px 10px;
+		width: max-content;
+	}
+
+	.round strong {
+		font-size: 14px;
+		font-weight: 800;
+	}
+
+	.round p {
+		font-size: 10px;
+		font-weight: 300;
+	}
+}

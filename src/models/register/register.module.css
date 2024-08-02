@@ -1,0 +1,37 @@
+.registerCont {
+	grid-column: 9 / 13;
+    gap: 15px;
+    display: grid;
+}
+
+.labels {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cardBody {
+	display: grid;
+	gap: 12px;
+    margin-top: 25px;
+}
+
+.socialLinks {
+	display: grid;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.socialLinkButton {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	text-align: left;
+}
+
+.loginButtonLabel {
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 25px;
+}

@@ -1,0 +1,15 @@
+.label {
+	padding: 10px 20px;
+	background: #e9ecff;
+	color: #000000;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	width: max-content;
+}
+
+.label.gradient {
+	color: white;
+	background: linear-gradient(to right, #726ced 0%, #9d80f4 35%, #70dcf1 100%);
+	box-shadow: 0 10px 25px 0 #726ced40, 3px 3px 5px 0 #f0efff66 inset;
+}

@@ -1,0 +1,11 @@
+.label {
+	padding: 10px;
+	border: 0.5px solid var(--border-color);
+	border-radius: 7px;
+}
+
+@media (max-height: 800px) {
+    .label {
+        padding: 7px;
+    }
+}

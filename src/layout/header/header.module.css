@@ -1,0 +1,31 @@
+.header {
+    background: #F8F9FF;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.headerCont {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-height: 43px;
+    width: auto;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav button {
+    white-space: nowrap;
+}

@@ -1,0 +1,191 @@
+.gameInfoBoard {
+	width: 58.11%;
+	aspect-ratio: 1 / 1;
+	background: #ffffff;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.game-info-board-bg {
+	background: #ffffff;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	border-radius: 5%;
+	inset: 0;
+	padding: 15px;
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
+.infoBoardTitle {
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.fieldNumber {
+	color: #726ced;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.infoCardBtns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.infoCardBtns button:nth-of-type(1) {
+	background: #726ced;
+	color: #ffffff;
+}
+
+.infoCardBtns button {
+	font-size: 16px;
+	font-weight: 500;
+	padding: 15px;
+	border-radius: 7px;
+}
+
+.cityName,
+.countryName {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.infoBoardCard {
+	border-radius: 10px;
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.infoBoardCard::-webkit-scrollbar {
+	width: 5px;
+}
+
+.infoBoardCard::-webkit-scrollbar-track {
+	border-radius: 99px;
+	background: #f1f1f1;
+}
+
+.infoBoardCard::-webkit-scrollbar-thumb {
+	border-radius: 99px;
+	background: #888;
+}
+
+.infoCardLabels {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	text-align: center;
+	margin-bottom: 7px;
+}
+
+.infoBoardWrapper {
+	padding: 10px;
+}
+
+.allLabelsCont {
+	position: relative;
+}
+
+.allLabelsTitles {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.allLabels {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 7px;
+}
+
+.boardLabel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.boardLabel p:nth-of-type(2) {
+	font-weight: 600;
+}
+
+.allLabelsFooter {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	gap: 5px;
+	background: #d6dbf5;
+	padding: 5px;
+}
+
+.footerBtns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 5px;
+}
+
+.allLabelsFooter .footerBtn {
+	background: #cad0ed;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.allLabelsFooter p {
+	font-size: 12px;
+}
+
+@media (max-height: 800px) {
+	.game-info-board-bg {
+		padding: 15px;
+	}
+
+	.infoBoardTitle {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.fieldNumber {
+		font-size: 10px;
+	}
+
+	.gameInfoBoard button {
+		font-size: 10px;
+		font-weight: 500;
+		padding: 10px;
+	}
+
+	.cityName,
+	.countryName {
+		font-size: 10px;
+		font-weight: 600;
+	}
+
+	.infoBoardCard p {
+		font-size: 10px;
+	}
+
+	.footerBtns .footerBtn {
+		font-size: 8px;
+	}
+
+	.allLabelsFooter p {
+		font-size: 8px;
+	}
+}
