@@ -3,21 +3,33 @@ import GoogleIcon from '../../assets/icons/google.svg?react';
 import MetaIcon from '../../assets/icons/meta.svg?react';
 import VKIcon from '../../assets/icons/vk.svg?react';
 import YandexIcon from '../../assets/icons/yandex.svg?react';
-import { Button, Input, Label, WrapperCard } from '../../shared/UI';
+import { Button, Label, WrapperCard } from '../../shared/UI';
+import { Step1 } from './components/step1/step1';
+import { useCallback } from 'react';
+import { useBoundStore } from '../../store';
+import { Step2 } from './components/step2/step2';
+import { Step3 } from './components/step3/step3';
+import { Step4 } from './components/step4/step4';
 
 export const Register = () => {
+	const { regStep } = useBoundStore((state) => state);
+
+	const changeSteps = useCallback(() => {
+		switch (regStep) {
+			case 1:
+				return <Step1 />;
+			case 2:
+				return <Step2 />;
+			case 3:
+				return <Step3 />;
+			case 4:
+				return <Step4 />;
+		}
+	}, [regStep]);
+
 	return (
 		<div className={cls.registerCont}>
-			<WrapperCard>
-				<div className={cls.labels}>
-					<Label text={'Регистрация через почту'} type={'gradient'} />
-					<Label text={'1/6'} />
-				</div>
-				<div className={cls.cardBody}>
-					<Input label={'Почта'} id={'mail'} />
-					<Button disabled>Зарегистрироваться</Button>
-				</div>
-			</WrapperCard>
+			{changeSteps()}
 			<WrapperCard>
 				<Label text={'Регистрация через партнеров'} type={'gradient'} />
 				<div className={cls.socialLinks}>

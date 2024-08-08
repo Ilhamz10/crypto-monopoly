@@ -16,8 +16,12 @@ import police from './images/police.png';
 import park from './images/park.png';
 import RightArrowIcon from './icons/right-arrow-icon.svg?react';
 import ReturnActiveFieldIcon from './icons/return-active-field-icon.svg?react';
+import AchivmentPrisonIcon from './icons/achivment-prison-icon.svg?react'
+import AchivmentExcursionIcon from './icons/achivment-excursion-icon.svg?react'
 
 export {
+	AchivmentExcursionIcon,
+	AchivmentPrisonIcon,
 	RightArrowIcon,
 	ReturnActiveFieldIcon,
 	police,

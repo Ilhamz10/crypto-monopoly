@@ -3,16 +3,21 @@
 	width: 100%;
 	font-size: 18px;
 	font-weight: 500;
-	color: #000000;
+	color: var(--text-color);
 	border-radius: 10px;
 }
 
 .button.filled {
-	background: #e9ecff;
+	--fill-color: #e9ecff;
+	background: var(--fill-color);
 }
 
 .button.gradient {
-	background: linear-gradient(to right, var(--grad-color-1), var(--grad-color-2));
+	background: linear-gradient(
+		to right,
+		var(--grad-color-1),
+		var(--grad-color-2)
+	);
 	color: white;
 }
 

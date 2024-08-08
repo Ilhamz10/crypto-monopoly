@@ -4,18 +4,6 @@
     display: grid;
 }
 
-.labels {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.cardBody {
-	display: grid;
-	gap: 12px;
-    margin-top: 25px;
-}
-
 .socialLinks {
 	display: grid;
 	gap: 10px;

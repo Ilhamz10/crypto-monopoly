@@ -1,6 +1,6 @@
 import { ReturnActiveFieldIcon, SearchIcon } from '../../../../assets';
 import CollapsibleCard from '../../../../shared/UI/collapsible-card/collapsible-card';
-import field from '../../assets/imgs/field.png';
+import { MiniInfoBoard } from '../../UI/mini-info-board/mini-info-board';
 import cls from './fields-list.module.css';
 
 export const FieldsList = () => {
@@ -13,18 +13,16 @@ export const FieldsList = () => {
 				icon1Size={[13.24, 13.56]}
 				icon2Size={[14, 14]}>
 				<div className={cls.allFields}>
-					<img src={field} alt='' />
-					<img src={field} alt='' />
-					<img src={field} alt='' />
-					<img src={field} alt='' />
-					<img src={field} alt='' />
-					<img src={field} alt='' />
-					<img src={field} alt='' />
-					<img src={field} alt='' />
-					<img src={field} alt='' />
-					<img src={field} alt='' />
-					<img src={field} alt='' />
-					<img src={field} alt='' />
+					<MiniInfoBoard />
+					<MiniInfoBoard />
+					<MiniInfoBoard />
+					<MiniInfoBoard />
+					<MiniInfoBoard />
+					<MiniInfoBoard />
+					<MiniInfoBoard />
+					<MiniInfoBoard />
+					<MiniInfoBoard />
+					<MiniInfoBoard />
 				</div>
 			</CollapsibleCard>
 		</div>

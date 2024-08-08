@@ -3,6 +3,7 @@ import { AllGameRules, Auth, MainGame, QuickGame, Root } from './pages';
 import { Register, Rules } from './models';
 import { Auction } from './pages/auction/auction';
 import { Deposit } from './pages/deposit/deposit';
+import { AllAchivments } from './pages/all-achivments/all-achivments';
 
 const router = createHashRouter([
 	{
@@ -39,6 +40,10 @@ const router = createHashRouter([
 	{
 		path: '/main-mode/deposit',
 		element: <Deposit />,
+	},
+	{
+		path: '/quick-game/all-achivments',
+		element: <AllAchivments />,
 	},
 ]);
 

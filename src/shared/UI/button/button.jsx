@@ -4,6 +4,8 @@ import cls from './button.module.css';
 export const Button = ({
 	children,
 	type = 'filled',
+	fillColor = '#e9ecff',
+	textColor = '#000',
 	variant = '',
 	className = '',
 	component = 'button',
@@ -14,7 +16,12 @@ export const Button = ({
 	if (component === 'button') {
 		return (
 			<button
-				style={{'--grad-color-1':gradientColors[0], '--grad-color-2':gradientColors[1]}}
+				style={{
+					'--grad-color-1': gradientColors[0],
+					'--grad-color-2': gradientColors[1],
+					'--fill-color': fillColor,
+					'--text-color': textColor,
+				}}
 				className={`${cls.button} ${cls[type]} ${cls[variant]} ${className}`}
 				{...props}>
 				{children}

@@ -3,10 +3,12 @@ import { useEffect, useRef, useState } from 'react';
 import cls from './achivments-card.module.css';
 import { Achivment } from './UI';
 import { Block, Label, WrapperCard } from '../../shared/UI';
+import { useNavigate } from 'react-router-dom';
 
 export const AchivmentsCard = () => {
 	const achivmentCardRef = useRef(null);
 	const [height, setHeight] = useState(0);
+	const navigate = useNavigate()
 
 	useEffect(() => {
 		const height =
@@ -20,7 +22,7 @@ export const AchivmentsCard = () => {
 		<WrapperCard>
 			<div className={cls.cardLabels}>
 				<Label text={'Достижения'} type={'gradient'} />
-				<Label text={'Все достижения'} />
+				<Label text={'Все достижения'} onClick={() => navigate('all-achivments')}/>
 			</div>
 			<div className={cls.allAchivments} style={{ height }}>
 				<Achivment
